@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Selección de Elementos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Software de Elementos basado en las calorías mínimas y peso máximo </h2>
+        <br>
+    <label>
+      <span>Calorías mínimas:</span>
+      <input type="number" id="caloriasMinimas">
+    </label>
+
+    <label>
+      <span>Peso máximo:</span> 
+      <input type="number" id="pesoMaximo">
+    </label>
+
+    <hr>
+
+    <h2>Agregar elemento</h2>
+
+    <label>
+      <span>Nombre:</span>
+      <input type="text" id="nombreElemento">
+    </label>
+
+    <label>
+      <span>Peso:</span>
+      <input type="number" id="pesoElemento">
+    </label>
+
+    <label>
+      <span>Calorías:</span>
+      <input type="number" id="caloriasElemento">
+    </label>
+
+    <button id="btnAgregar">Agregar elemento</button>
+    <br>
+    <br>
+    <label>
+      <input type="text" id="nombreEliminar" placeholder="Nombre del elemento a eliminar">
+    </label>
+    <button id="btnEliminar">Eliminar elemento</button>
+
+    <hr>
+
+    <h3>Elementos agregados</h3>
+    <ul id="listaElementos"></ul>
+
+    <hr>
+
+    <button id="btnCalcular">Calcular mejor combinación</button>
+
+    <h3>Resultado</h3>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="software.js"></script>
+</body>
+</html>
